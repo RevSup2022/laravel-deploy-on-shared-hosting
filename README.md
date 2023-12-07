@@ -258,13 +258,14 @@ git clone git@github.com-repo-1:OWNER/repo-1.git
 
 ***cpanel/Shared hosting***
 
-This exact error is usually caused by the ~/.ssh/config file. So you should definitely revisit the configuration in that file.
+Without Git Version Control
 
-You should change the texts to this
+You should change the texts of the second repository file to the second setup
 ```
 Host github.com
     IdentityFile ~/.ssh/{private_ssh_key_name_1}
 
-Host github.com
-    IdentityFile ~/.ssh/{private_ssh_key_name_2}
+Host github.com-repo-1
+        Hostname github.com
+        IdentityFile=/home/user/.ssh/repo-1_deploy_key
 ```
