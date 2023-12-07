@@ -269,3 +269,8 @@ Host github.com-repo-1
         Hostname github.com
         IdentityFile=/home/user/.ssh/repo-1_deploy_key
 ```
+
+## Update a Repository without Git Version Control
+- Open Terminal/CMD SSH connect to BlueHost
+- cd to the repository
+- run `git pull`
